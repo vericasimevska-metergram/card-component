@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Card } from './Card.js'
 import sedansImg from './images/icon-sedans.svg'
 import suvsImg from './images/icon-suvs.svg'
 import luxuryImg from './images/icon-luxury.svg'
@@ -28,17 +29,6 @@ function App() {
         color={'hsl(179, 100%, 13%)'}
       />
     </div>
-  );
-}
-
-export function Card({ image, title, desciprion, color }) {
-  return (
-    <section className={card.section} style={{ backgroundColor: color }}>
-      <img src={image}></img>
-      <h1 className={card.heading}>{title}</h1>
-      <h1 className={card.desciption}>{desciprion}</h1>
-      <button style={{ color: color }} className={card.button}>Learn More</button>
-    </section>
   );
 }
 
